@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soalma · Contes et légendes du Burkina Faso</title>
+  <meta name="description" content="Soalma rassemble les contes, légendes et récits historiques du Burkina Faso sur une carte interactive 2D et 3D, avec illustrations animées, narration audio et langues nationales.">
+  <meta name="theme-color" content="#0D0B16">
+  <link rel="canonical" href="https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Soalma · Contes et légendes du Burkina Faso">
+  <meta property="og:description" content="Parcourez le Burkina Faso à travers ses récits : carte interactive, illustrations animées, voix et langues nationales.">
+  <meta property="og:image" content="https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400..800&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Soalma",
+    "alternateName": "Contes et légendes du Burkina Faso",
+    "url": "https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/",
+    "inLanguage": ["fr", "mos", "dyu", "ff"],
+    "description": "Plateforme web multimédia de préservation et de transmission du patrimoine oral burkinabè."
+  }
+  </script>
+  <script type="module" src="assets/js/home.js"></script>
+</head>
+<body>
+  <!-- en-tete -->
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="Soalma, accueil"><img src="assets/img/logo.svg" alt="" width="34" height="34">Soalma</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="carte.html">La carte</a>
+        <a href="contes.html">Les récits</a>
+        <a href="a-propos.html">Le projet</a>
+        <a class="btn btn-primary btn-sm" href="contes.html" data-random>Conte du soir</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /en-tete -->
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
+      <canvas id="embers" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Patrimoine oral du Burkina Faso</p>
+          <h1 id="hero-title">Chaque soir, au pied du baobab, <em>une histoire recommence.</em></h1>
+          <p class="lead">Soalma rassemble les contes, légendes et récits historiques du pays. Parcourez la carte, écoutez les voix, et choisissez vous-même la suite du récit.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="carte.html" data-icon="map">Explorer la carte</a>
+            <a class="btn btn-ghost" href="contes.html" data-random data-icon="headphones">Écouter un conte au hasard</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt class="visually-hidden">Récits</dt><dd style="margin:0"><strong id="stat-recits">10</strong> récits illustrés</dd></div>
+            <div><dt class="visually-hidden">Langues</dt><dd style="margin:0"><strong id="stat-langues">6</strong> langues nationales</dd></div>
+            <div><dt class="visually-hidden">Tableaux</dt><dd style="margin:0"><strong id="stat-tableaux">44</strong> tableaux animés</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ways-title">
+      <div class="container">
+        <p class="eyebrow">Par où commencer</p>
+        <h2 id="ways-title">Trois façons d'entrer dans les récits</h2>
+        <div class="ways">
+          <a class="way reveal" href="carte.html">
+            <span class="num">01</span>
+            <h3>La carte</h3>
+            <p>Chaque récit est placé là où il est né. Passez de la carte plane au relief en 3D et voyagez de Dori à Loropéni.</p>
+            <span class="go">Ouvrir la carte <span data-icon="arrowRight"></span></span>
+          </a>
+          <a class="way reveal" href="contes.html">
+            <span class="num">02</span>
+            <h3>La bibliothèque</h3>
+            <p>Filtrez par type, par langue ou par région. Contes d'animaux, légendes fondatrices, récits d'histoire.</p>
+            <span class="go">Voir les récits <span data-icon="arrowRight"></span></span>
+          </a>
+          <a class="way reveal" href="contes.html" data-random>
+            <span class="num">03</span>
+            <h3>Le conte du soir</h3>
+            <p>Laissez le griot choisir pour vous. Un récit tiré au hasard, à lire ou à écouter, avec l'ambiance de la nuit.</p>
+            <span class="go">Tirer un conte <span data-icon="arrowRight"></span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Sélection</p>
+            <h2 id="featured-title">À écouter ce soir</h2>
+          </div>
+          <a class="btn btn-ghost" href="contes.html">Tous les récits <span data-icon="arrowRight"></span></a>
+        </div>
+        <div class="grid-cards" id="featured"></div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--nuit-950)" aria-labelledby="why-title">
+      <div class="container manifesto">
+        <div class="reveal">
+          <p class="eyebrow">Pourquoi Soalma</p>
+          <h2 id="why-title" class="visually-hidden">Pourquoi Soalma</h2>
+          <blockquote>
+            « En Afrique, quand un vieillard meurt, c'est une bibliothèque qui brûle. »
+            <footer>Amadou Hampâté Bâ, UNESCO, 1960</footer>
+          </blockquote>
+        </div>
+        <div class="pillars reveal">
+          <div class="pillar">
+            <span class="ic" data-icon="mic"></span>
+            <div><h3>Préserver</h3><p>Numériser les récits et les voix des conteurs avant qu'ils ne se perdent, avec leurs variantes et leurs sources.</p></div>
+          </div>
+          <div class="pillar">
+            <span class="ic" data-icon="globe"></span>
+            <div><h3>Transmettre</h3><p>Faire entendre chaque histoire dans sa langue d'origine, avec le texte français en regard.</p></div>
+          </div>
+          <div class="pillar">
+            <span class="ic" data-icon="sparkle"></span>
+            <div><h3>Faire vivre</h3><p>Offrir aux plus jeunes une expérience où l'on regarde, écoute et répond, comme lors d'une veillée.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="langs-title">
+      <div class="container">
+        <p class="eyebrow">Les voix du pays</p>
+        <h2 id="langs-title">Six langues, six manières de raconter</h2>
+        <p class="lead" style="margin-bottom:36px">Le Burkina Faso compte une soixantaine de langues. Soalma commence par celles des récits publiés, et s'ouvre aux autres au fil des contributions.</p>
+        <div class="langs" id="langs"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Vous connaissez un conte ?</h2>
+            <p>Enregistrez-le en mooré, en dioula, en fulfulde ou dans votre langue. Votre voix rejoindra la carte.</p>
+          </div>
+          <a class="btn btn-primary" href="a-propos.html#contribuer" data-icon="mic">Contribuer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- pied -->
+  <div class="motif" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="./"><img src="assets/img/logo.svg" alt="" width="34" height="34">Soalma</a>
+        <p style="margin-top:14px;max-width:42ch">Plateforme de préservation et de transmission du patrimoine oral burkinabè. Soalma signifie « conte » en mooré.</p>
+      </div>
+      <div>
+        <h2>Explorer</h2>
+        <ul>
+          <li><a href="carte.html">Carte interactive</a></li>
+          <li><a href="contes.html">Tous les récits</a></li>
+          <li><a href="contes.html" data-random>Conte du soir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Le projet</h2>
+        <ul>
+          <li><a href="a-propos.html#demarche">Démarche</a></li>
+          <li><a href="a-propos.html#contribuer">Contribuer</a></li>
+          <li><a href="a-propos.html#accessibilite">Accessibilité</a></li>
+          <li><a href="a-propos.html#sources">Sources et licences</a></li>
+        </ul>
+      </div>
+      <div class="fineprint">
+        <span>© <span data-year>2026</span> Soalma. Projet de Master 1, Technologies Web et Multimédia, IBAM.</span>
+        <span>Textes sous licence CC BY-NC-SA 4.0</span>
+      </div>
+    </div>
+  </footer>
+  <!-- /pied -->
+</body>
+</html>

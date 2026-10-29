@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/sitemap.xml

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le projet · Soalma</title>
+  <meta name="description" content="Démarche, technologies, accessibilité et contribution : comment Soalma préserve et transmet le patrimoine oral du Burkina Faso.">
+  <meta name="theme-color" content="#0D0B16">
+  <link rel="canonical" href="https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/a-propos.html">
+  <meta property="og:title" content="Le projet · Soalma">
+  <meta property="og:description" content="Comment Soalma préserve et transmet le patrimoine oral du Burkina Faso.">
+  <meta property="og:image" content="https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/assets/img/og-image.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400..800&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/ui.js"></script>
+</head>
+<body>
+  <!-- en-tete -->
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="Soalma, accueil"><img src="assets/img/logo.svg" alt="" width="34" height="34">Soalma</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="carte.html">La carte</a>
+        <a href="contes.html">Les récits</a>
+        <a href="a-propos.html" aria-current="page">Le projet</a>
+        <a class="btn btn-primary btn-sm" href="contes.html" data-random>Conte du soir</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /en-tete -->
+
+  <main id="contenu">
+    <div class="container">
+      <header class="page-head">
+        <p class="eyebrow">Le projet</p>
+        <h1>Garder vivantes les histoires du soir</h1>
+        <p class="lead">Au Burkina Faso, les contes se transmettent de bouche à oreille, à la veillée, en famille. Soalma veut que cette transmission continue aussi sur les écrans, sans perdre la voix, la langue ni le lieu de chaque récit.</p>
+      </header>
+
+      <div class="about-grid">
+        <nav class="toc" aria-label="Sommaire de la page">
+          <a href="#demarche">Démarche</a>
+          <a href="#experience">L'expérience</a>
+          <a href="#technique">Choix techniques</a>
+          <a href="#accessibilite">Accessibilité</a>
+          <a href="#contribuer">Contribuer</a>
+          <a href="#ethique">Éthique et droits</a>
+          <a href="#sources">Sources et licences</a>
+        </nav>
+
+        <div class="prose">
+          <section id="demarche" aria-labelledby="h-demarche">
+            <h2 id="h-demarche" style="margin-top:0">Démarche</h2>
+            <p>La plateforme répond à trois objectifs :</p>
+            <ul>
+              <li><strong>Préserver</strong> : numériser des récits oraux avec leurs variantes, leurs sources et, à terme, la voix de leurs conteurs.</li>
+              <li><strong>Transmettre</strong> : rendre ces récits accessibles en français et dans les langues nationales (mooré, dioula, fulfulde, gulmancema, kasem, lobiri), sur ordinateur comme sur téléphone.</li>
+              <li><strong>Faire vivre</strong> : proposer une lecture active, où l'on regarde, écoute, choisit et répond, comme lors d'une veillée.</li>
+            </ul>
+            <p>Les dix premiers récits couvrent les grandes aires culturelles du pays : le plateau mossi, l'Ouest bobo et dioula, le Sahel peul, l'Est gourmantché, le Sud kassena et le Sud-Ouest lobi. On y trouve trois genres : le <em>conte</em> (récit d'imagination, souvent avec des animaux et une morale), la <em>légende</em> (récit fondateur attaché à un lieu ou à un peuple) et le <em>récit historique</em> (mémoire d'un fait ou d'un site réel).</p>
+          </section>
+
+          <section id="experience" aria-labelledby="h-experience">
+            <h2 id="h-experience">L'expérience</h2>
+            <h3>La carte</h3>
+            <p>Chaque récit est placé sur le lieu où il est raconté. La carte 2D, en SVG, s'utilise entièrement au clavier. La vue 3D présente le pays comme une plaque de latérite, sur laquelle chaque récit se signale par une colonne de lumière. Une visite guidée parcourt les récits du nord au sud.</p>
+            <h3>Le récit en tableaux</h3>
+            <p>Chaque récit est découpé en quatre ou cinq tableaux. Chaque tableau a son illustration animée : ciel, relief, personnages et animaux en silhouettes, avec un léger effet de profondeur au mouvement de la souris. On avance avec les boutons, les points de progression ou les flèches du clavier.</p>
+            <h3>Le moment du choix</h3>
+            <p>Au milieu du récit, le griot s'adresse à l'auditeur : « Et toi, qu'aurais-tu fait ? ». Chaque réponse reçoit un commentaire, puis le récit reprend son cours. Ce procédé reprend une habitude des veillées, où le public intervient et répond au conteur.</p>
+            <h3>Écouter</h3>
+            <p>Le lecteur audio lit le récit avec la voix de synthèse du navigateur et surligne le paragraphe en cours. Lorsqu'un enregistrement en langue nationale est disponible, il remplace la voix de synthèse. Une ambiance sonore de la nuit (grillons, feu, vent, eau, balafon) s'adapte à chaque tableau.</p>
+            <h3>Après le récit</h3>
+            <p>La fin du récit présente la morale, un court quiz avec explications, le glossaire des mots en langue nationale, les sources et les récits des environs.</p>
+          </section>
+
+          <section id="technique" aria-labelledby="h-technique">
+            <h2 id="h-technique">Choix techniques</h2>
+            <p>Le site est statique : il ne dépend d'aucun serveur applicatif et peut être hébergé gratuitement. Il est écrit en HTML, CSS et JavaScript natifs, sans framework, pour rester léger et lisible.</p>
+            <div style="overflow-x:auto">
+              <table class="table">
+                <thead><tr><th scope="col">Besoin</th><th scope="col">Technologie</th><th scope="col">Pourquoi</th></tr></thead>
+                <tbody>
+                  <tr><td>Structure et référencement</td><td>HTML5 sémantique, données structurées schema.org</td><td>Pages lisibles par les moteurs de recherche et les lecteurs d'écran</td></tr>
+                  <tr><td>Illustrations animées</td><td>SVG généré en JavaScript, animations CSS</td><td>Vectoriel, net sur tous les écrans, quelques kilo-octets au lieu d'images lourdes</td></tr>
+                  <tr><td>Carte 2D</td><td>SVG, contour réel issu de geoBoundaries</td><td>Précise, accessible au clavier, utilisable sans WebGL</td></tr>
+                  <tr><td>Carte 3D</td><td>WebGL avec Three.js</td><td>Relief, lumière et caméra animée, chargés seulement à la demande</td></tr>
+                  <tr><td>Braises de l'accueil</td><td>Canvas 2D</td><td>Particules animées, suspendues hors de l'écran</td></tr>
+                  <tr><td>Narration</td><td>Web Speech API, élément audio HTML5</td><td>Lecture immédiate en français, enregistrements MP3 en langues nationales</td></tr>
+                  <tr><td>Ambiance sonore</td><td>Web Audio API</td><td>Sons synthétisés en direct, aucun fichier à télécharger</td></tr>
+                  <tr><td>Hors connexion</td><td>Service worker, manifeste web</td><td>Les récits déjà ouverts restent consultables avec une connexion faible</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Les performances suivent les recommandations du cours : formats vectoriels, chargement différé de la 3D, vignettes animées seulement au survol, animations coupées lorsque l'utilisateur demande moins de mouvement.</p>
+          </section>
+
+          <section id="accessibilite" aria-labelledby="h-access">
+            <h2 id="h-access">Accessibilité</h2>
+            <p>Soalma vise le niveau AA des WCAG 2.1.</p>
+            <ul>
+              <li>Navigation complète au clavier, lien d'évitement vers le contenu, focus toujours visible.</li>
+              <li>Contrastes vérifiés entre le texte et le fond, en mode nuit comme en mode jour.</li>
+              <li>Chaque illustration porte un titre lu par les lecteurs d'écran ; le texte intégral du récit est toujours affiché, ce qui sert aussi de transcription de l'audio.</li>
+              <li>Le type de récit est indiqué par une couleur et par un texte, jamais par la couleur seule.</li>
+              <li>Mode lecture de jour, trois tailles de texte et trois vitesses de narration.</li>
+              <li>Respect du réglage système « réduire les animations ».</li>
+              <li>La carte 3D a toujours une alternative : la carte 2D et la liste des récits.</li>
+            </ul>
+          </section>
+
+          <section id="contribuer" aria-labelledby="h-contrib">
+            <h2 id="h-contrib">Contribuer un enregistrement</h2>
+            <p>Les voix sont la partie la plus précieuse du projet. Si vous parlez l'une des langues de la plateforme, ou si un aîné de votre entourage accepte de raconter, voici comment procéder.</p>
+            <ol>
+              <li>Choisissez un récit de la bibliothèque, ou proposez-en un nouveau.</li>
+              <li>Enregistrez dans un endroit calme, téléphone posé à une trentaine de centimètres de la bouche.</li>
+              <li>Exportez en MP3, mono, 44,1 kHz, 96 à 128 kb/s. Un logiciel gratuit comme Audacity suffit pour couper les silences et normaliser le volume.</li>
+              <li>Indiquez la langue, le village d'origine du récit et le nom du conteur, s'il souhaite être cité.</li>
+              <li>Envoyez le fichier par une <a href="https://github.com/PorgoAbdoulNassirou/Projet_Tech_Web_et_Multimediat/issues/new" rel="noopener">proposition sur le dépôt du projet</a>.</li>
+            </ol>
+            <p class="note">Aucun enregistrement n'est publié sans l'accord écrit du conteur, ou de sa famille s'il s'agit d'une personne âgée ou disparue.</p>
+          </section>
+
+          <section id="ethique" aria-labelledby="h-ethique">
+            <h2 id="h-ethique">Éthique et droits</h2>
+            <p>Un conte n'appartient à personne en particulier, mais il appartient à une communauté. Soalma suit quelques règles simples :</p>
+            <ul>
+              <li><strong>Citer l'origine</strong> : chaque récit indique son peuple, son lieu et ses sources. Les adaptations sont signalées comme telles.</li>
+              <li><strong>Respecter le sacré</strong> : les récits liés à des rites d'initiation ou à des savoirs réservés ne sont pas publiés.</li>
+              <li><strong>Consentement</strong> : droit à l'image et à la voix, accord écrit des conteurs, possibilité de retrait à tout moment.</li>
+              <li><strong>Données personnelles</strong> : le site ne dépose aucun cookie de suivi. Les seuls réglages enregistrés (thème, taille du texte, récits lus) restent dans votre navigateur.</li>
+            </ul>
+          </section>
+
+          <section id="sources" aria-labelledby="h-sources">
+            <h2 id="h-sources">Sources et licences</h2>
+            <ul>
+              <li>Textes des récits : rédaction de l'équipe Soalma à partir de traditions orales, sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="noopener license">Creative Commons BY-NC-SA 4.0</a>.</li>
+              <li>Contour du Burkina Faso : <a href="https://www.geoboundaries.org/" rel="noopener">geoBoundaries</a> (William &amp; Mary geoLab), licence ODbL.</li>
+              <li>Ruines de Loropéni : <a href="https://whc.unesco.org/fr/list/1225/" rel="noopener">UNESCO, Centre du patrimoine mondial</a>.</li>
+              <li>Moteur 3D : <a href="https://threejs.org/" rel="noopener">Three.js</a>, licence MIT.</li>
+              <li>Polices : Fraunces et Manrope, licence SIL Open Font.</li>
+              <li>Illustrations, icônes et ambiances sonores : créations originales du projet, dessinées et synthétisées en code.</li>
+            </ul>
+            <p class="note">Projet réalisé dans le cadre du cours « Technologies Web et Multimédia », Master 1, Institut Burkinabè des Arts et Métiers (IBAM), Université Joseph Ki-Zerbo.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div style="height:96px"></div>
+  </main>
+
+  <!-- pied -->
+  <div class="motif" aria-hidden="true"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a class="brand" href="./"><img src="assets/img/logo.svg" alt="" width="34" height="34">Soalma</a>
+        <p style="margin-top:14px;max-width:42ch">Plateforme de préservation et de transmission du patrimoine oral burkinabè. Soalma signifie « conte » en mooré.</p>
+      </div>
+      <div>
+        <h2>Explorer</h2>
+        <ul>
+          <li><a href="carte.html">Carte interactive</a></li>
+          <li><a href="contes.html">Tous les récits</a></li>
+          <li><a href="contes.html" data-random>Conte du soir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Le projet</h2>
+        <ul>
+          <li><a href="a-propos.html#demarche">Démarche</a></li>
+          <li><a href="a-propos.html#contribuer">Contribuer</a></li>
+          <li><a href="a-propos.html#accessibilite">Accessibilité</a></li>
+          <li><a href="a-propos.html#sources">Sources et licences</a></li>
+        </ul>
+      </div>
+      <div class="fineprint">
+        <span>© <span data-year>2026</span> Soalma. Projet de Master 1, Technologies Web et Multimédia, IBAM.</span>
+        <span>Textes sous licence CC BY-NC-SA 4.0</span>
+      </div>
+    </div>
+  </footer>
+  <!-- /pied -->
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La carte des récits · Soalma</title>
+  <meta name="description" content="Carte interactive 2D et 3D du Burkina Faso : chaque conte, légende ou récit historique est placé sur le lieu où il est né.">
+  <meta name="theme-color" content="#0D0B16">
+  <link rel="canonical" href="https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/carte.html">
+  <meta property="og:title" content="La carte des récits · Soalma">
+  <meta property="og:description" content="Parcourez le Burkina Faso de récit en récit, en 2D ou en 3D.">
+  <meta property="og:image" content="https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/assets/img/og-image.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400..800&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/map.js"></script>
+</head>
+<body>
+  <!-- en-tete -->
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./" aria-label="Soalma, accueil"><img src="assets/img/logo.svg" alt="" width="34" height="34">Soalma</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="carte.html" aria-current="page">La carte</a>
+        <a href="contes.html">Les récits</a>
+        <a href="a-propos.html">Le projet</a>
+        <a class="btn btn-primary btn-sm" href="contes.html" data-random>Conte du soir</a>
+      </nav>
+    </div>
+  </header>
+  <!-- /en-tete -->
+
+  <main id="contenu" class="map-page">
+    <aside class="map-side" aria-labelledby="map-title">
+      <div class="map-side-head">
+        <h1 id="map-title">La carte des récits</h1>
+        <p>Chaque point marque le lieu d'un récit. Choisissez-en un sur la carte ou dans la liste.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filtrer par type de récit"></div>
+      </div>
+      <ul class="map-list" id="list" aria-label="Récits sur la carte"></ul>
+    </aside>
+
+    <section class="map-stage" id="stage" aria-label="Carte du Burkina Faso">
+      <div class="map-toolbar" role="group" aria-label="Affichage de la carte">
+        <button class="seg" type="button" id="v2d" aria-pressed="true" data-icon="layers">Carte 2D</button>
+        <button class="seg" type="button" id="v3d" aria-pressed="false" data-icon="cube">Relief 3D</button>
+        <button class="seg" type="button" id="tour" aria-pressed="false" data-icon="play">Visite guidée</button>
+      </div>
+      <div class="map-2d" id="map2d"></div>
+      <div class="map-3d" id="map3d" hidden></div>
+      <p class="map-hint" id="hint"><kbd>Tab</kbd> pour parcourir les points, <kbd>Entrée</kbd> pour ouvrir</p>
+      <div id="preview"></div>
+    </section>
+  </main>
+</body>
+</html>
