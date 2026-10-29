@@ -5,7 +5,9 @@ Plateforme web multimédia de préservation et de transmission du patrimoine ora
 
 **Site en ligne : https://porgoabdoulnassirou.github.io/Projet_Tech_Web_et_Multimediat/**
 
-Projet réalisé pour le cours « Technologies Web et Multimédia », Master 1, IBAM.
+Projet réalisé pour le cours « Technologies Web et Multimédia », Master 1, IBAM, par :
+BAMBARA Mireille Epiphanie Joëlle Guerla, KOBENDE Pégdwendé Evrard, OUEDRAOGO Armand Hendrix,
+PORGO Abdoul Nassirou et THIOMBIANO Yempabou Romaric Johan.
 
 ## Fonctionnalités
 
