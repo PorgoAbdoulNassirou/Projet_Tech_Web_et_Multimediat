@@ -389,7 +389,7 @@ export const CONTES = [
       { q: 'Quel est l\'ancien nom de Bobo-Dioulasso ?', choix: ['Sya', 'Nungu', 'Gambaga'], bonne: 0, explication: 'Sya est le nom du vieux quartier fondateur de la ville.' },
     ],
     sources: ['Tradition orale de Bobo-Dioulasso autour du site de Dafra.', 'Les récits varient selon les familles gardiennes du lieu.'],
-    audio: {},
+    audio: { dioula: 'assets/audio/dafra-dioula.mp3' },
   },
 
   {
@@ -905,7 +905,7 @@ export const CONTES = [
       { q: 'Selon les dozos, qu\'est-ce qu\'un bon chasseur ?', choix: ['Celui qui tue le plus', 'Celui qui sait quand s\'arrêter', 'Celui qui chasse seul'], bonne: 1, explication: 'La mesure fait partie des règles de la confrérie.' },
     ],
     sources: ['Adaptation libre inspirée des récits de chasseurs dozos et des génies protecteurs de l\'eau dans l\'Ouest du Burkina Faso.'],
-    audio: {},
+    audio: { dioula: 'assets/audio/karfiguela-dioula.mp3' },
   },
 ];
 
