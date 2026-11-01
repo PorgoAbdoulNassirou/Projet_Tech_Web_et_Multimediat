@@ -655,7 +655,7 @@ export const CONTES = [
       { q: 'Qui indique à Hamadou où trouver sa vache ?', choix: ['Son père', 'La vieille femme qu\'il a aidée', 'Un marchand'], bonne: 1, explication: 'Sa générosité lui vaut le conseil qui le mène à la mare.' },
     ],
     sources: ['Adaptation libre de motifs fréquents des contes peuls du Sahel (le berger, la bête égarée, l\'épreuve de l\'hospitalité).'],
-    audio: {},
+    audio: { fulfulde: 'assets/audio/vache-blanche-fulfulde.mp3' },
   },
 
   {

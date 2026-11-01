@@ -4,7 +4,7 @@
  * Pages HTML : réseau d'abord, cache en secours.
  * Fichiers statiques : cache d'abord, mis à jour en arrière-plan.
  */
-const VERSION = 'soalma-v3';
+const VERSION = 'soalma-v4';
 const CORE = [
   './', 'index.html', 'carte.html', 'contes.html', 'conte.html', 'a-propos.html',
   'assets/css/main.css',
