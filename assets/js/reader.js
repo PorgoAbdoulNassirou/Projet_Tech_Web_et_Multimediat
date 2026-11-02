@@ -334,11 +334,10 @@ function start(c) {
     langs.map((l) => c.audio[l]
       ? `<option value="${l}">${LANGUES[l].nom} · enregistrement</option>`
       : `<option value="${l}" disabled>${LANGUES[l].nom} · enregistrement à venir</option>`).join('');
-  if (!ttsSupported) {
-    voice.querySelector('option[value="fr"]').disabled = true;
-    const firstRec = voice.querySelector('option:not([disabled])');
-    if (firstRec) voice.value = firstRec.value;
-  }
+  if (!ttsSupported) voice.querySelector('option[value="fr"]').disabled = true;
+  // L'enregistrement en langue locale passe avant la voix de synthèse
+  const firstRec = voice.querySelector('option:not([value="fr"]):not([disabled])');
+  if (firstRec) voice.value = firstRec.value;
 
   const playBtn = $('#play');
   const setPlayIcon = (on) => {
